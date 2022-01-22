@@ -1,0 +1,183 @@
+.btn__classic {
+    text-decoration: none;
+    color: #fff;
+    background-color: $color-primary;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.1s;
+
+    &:hover {
+        background-color: $color-blue-light;
+    }
+}
+
+///////////////////////////////@at-root
+// about-us
+
+.about-us {
+
+    cursor: pointer;
+
+    &__link {}
+
+    &__content {
+        padding: 3rem 5rem;
+        position: absolute;
+        right: 7rem;
+        top: 10rem;
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 22rem);
+        grid-column-gap: 6rem;
+        grid-row-gap: 2rem;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.7s;
+
+
+        &--item {
+
+            h4 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #333;
+                font-size: 15px;
+                transition: all 0.2s;
+                font-weight: 600;
+            }
+
+            p {
+                color: #444;
+                font-size: 13px;
+                transition: all 0.2s;
+
+            }
+
+            &:hover {
+                h4 {
+                    color: #9E9B98;
+                }
+
+                p {
+                    color: #9E9B98;
+                }
+            }
+        }
+
+
+    }
+
+
+}
+
+.about-us:hover .about-us__content {
+    top: 8rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+//////////////////////////////@at-root
+// Video-experience
+
+.Video-Experience {
+
+    &__content {
+        padding: 3rem 5rem;
+        position: absolute;
+        right: 15rem;
+        top: 10rem;
+        background-color: #fff;
+        display: flex;
+        transition: all 0.7s;
+        visibility: hidden;
+        opacity: 0;
+
+        h4 {
+            color: #444;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #444;
+        }
+    }
+
+    &__first {
+        width: 32rem;
+        margin-right: 5rem;
+
+        &>* {
+            display: flex;
+            align-items: center;
+        }
+
+        h4 {
+            color: #444;
+            font-size: 14px;
+        }
+
+        svg {
+
+            width: 100%;
+        }
+
+        aside {
+            margin-left: -23rem;
+            color: #444 !important;
+
+            h4 {
+                color: #444;
+            }
+
+            p {
+                font-size: 14px;
+                color: #444;
+            }
+        }
+    }
+
+
+    &__second {
+        width: 20rem;
+        margin-right: 5rem;
+
+    }
+
+    &__third {
+        width: 20rem;
+        margin-top: 2rem;
+
+    }
+
+    &__item {
+
+        margin: 2rem 0;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+}
+
+.Video-Experience__content:hover .Video-Experience__item:not(:hover) {
+
+    opacity: 0.6;
+}
+
+
+.Video-Experience:hover .Video-Experience__content {
+    top: 8rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+//////////////////////
+
+.three {
+    margin-right: 3rem;
+}
+
+.four {
+    margin-right: 3rem;
+}

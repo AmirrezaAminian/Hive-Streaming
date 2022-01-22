@@ -1,0 +1,45 @@
+.sidebar {
+
+    padding: 2.5rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__icon {
+        width: 18rem;
+        cursor: pointer;
+
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        margin-top: -10px;
+       
+    }
+
+    &__list {
+        display: flex;
+        margin-right: 4rem;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item {
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s;
+        font-weight: 500;
+
+        &:hover{
+             color: $color-primary;
+        }
+    }
+
+}
