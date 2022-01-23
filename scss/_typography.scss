@@ -18,7 +18,7 @@
 
     cursor: pointer;
 
-    
+
 
     &__content {
         padding: 3rem 5rem;
@@ -181,3 +181,46 @@
 .four {
     margin-right: 3rem;
 }
+
+
+
+.btn {
+    border: none;
+    background: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    font-size: 17px;
+
+    i {
+        transition: all 0.4s;
+        font-size: 12px;
+    }
+
+    a {
+        text-decoration: none;
+        margin-left: 1rem;
+        color: #fff;
+        font-weight: 600;
+        padding-bottom: 5px;
+        border-bottom: 1.5px solid rgba(#fff, 0.8);
+        transition: all 0.4s;
+    }
+
+    &:hover &__icon {
+        transform: translateX(6px);
+    }
+
+    &:active &__icon {
+        transform: translateX(-2px);
+    }
+
+    &:hover &__text {
+        border-bottom: 1.5px solid rgba(#fff, 1);
+    }
+
+}
+
+
+ 

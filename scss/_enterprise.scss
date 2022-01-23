@@ -1,17 +1,27 @@
-.enterprise{
+.enterprise {
     text-align: center;
     background-color: $color-blue-light;
-    padding: 3rem;
+    padding: 5rem 3rem;
 
-    &__container{
+    h2 {
+        color: #fff;
+        font-size: 3.5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    &__container {
         display: flex;
-    
+
     }
 
 
-    &__logo{
+    &__logo {
         width: 200px;
+        margin-left: 9rem;
 
-        
+        svg {
+            transform: scale(0.35);
+        }
+
     }
 }
