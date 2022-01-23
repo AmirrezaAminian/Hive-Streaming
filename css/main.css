@@ -22,8 +22,152 @@ body {
 }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background-color: #273739;
+}
+
+.header__content {
+  display: flex;
+  height: 100%;
+}
+
+.header__left {
+  width: 30%;
+  position: relative;
+}
+
+.header__left img {
+  width: 120%;
+  position: absolute;
+  bottom: 10rem;
+  left: 0;
+}
+
+.header__center {
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+.header__right {
+  width: 30%;
+  position: relative;
+}
+
+.header__right img {
+  width: 110%;
+  position: absolute;
+  bottom: 10rem;
+  right: 0;
+}
+
+.header__attention {
+  display: flex;
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 15rem;
+  background-color: #E46113;
+  color: #fff;
+  cursor: pointer;
+  padding: 2px;
+  font-size: 13px;
+  transition: all 0.4s;
+}
+
+.header__attention:hover {
+  transform: scale(1.05);
+}
+
+.header__attention--left {
+  padding-left: 15px;
+  padding-right: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__attention--left span {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.header__attention--right {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header__attention--right p {
+  margin-right: 15px;
+}
+
+.header__attention--right i {
+  font-size: 10px;
+}
+
+.header__title {
+  margin: 1.2rem 0;
+  color: #fff;
+  font-size: 5.5rem;
+  line-height: 1.4;
+}
+
+.header__title span {
+  display: block;
+}
+
+.header__text {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0 10rem;
+}
+
+.header__button {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header__button .btn__classic {
+  padding: 1.4rem 2.5rem;
+}
+
+.header__button button {
+  margin-left: 2rem;
+  border: none;
+  background: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  font-size: 17px;
+}
+
+.header__button button i {
+  transition: all 0.4s;
+  font-size: 12px;
+}
+
+.header__button button a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.4s;
+}
+
+.header__button:hover .header__btn i {
+  transform: translateX(6px);
+}
+
+.header__button:active .header__btn i {
+  transform: translateX(-2px);
+}
+
+.header__button:hover .header__btn a {
+  border-bottom: 1.5px solid white;
 }
 
 .sidebar {
