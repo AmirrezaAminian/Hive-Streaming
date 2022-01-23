@@ -64,7 +64,7 @@ body {
 .header__attention {
   display: flex;
   text-align: center;
-  width: 55%;
+  width: 48%;
   margin: 0 auto;
   margin-top: 15rem;
   background-color: #E46113;
@@ -358,5 +358,23 @@ body {
 
 .four {
   margin-right: 3rem;
+}
+
+.enterprise {
+  text-align: center;
+  background-color: #4594A1;
+  padding: 3rem;
+}
+
+.enterprise__container {
+  display: flex;
+}
+
+.enterprise__logo {
+  width: 200px;
+}
+
+.enterprise__logo svg {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

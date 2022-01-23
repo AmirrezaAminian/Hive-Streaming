@@ -1,0 +1,17 @@
+.enterprise{
+    text-align: center;
+    background-color: $color-blue-light;
+    padding: 3rem;
+
+    &__container{
+        display: flex;
+    
+    }
+
+
+    &__logo{
+        width: 200px;
+
+        
+    }
+}
