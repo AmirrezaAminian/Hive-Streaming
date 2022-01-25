@@ -8,6 +8,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  position: relative;
 }
 
 body {
@@ -19,11 +20,11 @@ body {
 
 ::selection {
   color: #fff;
-  background-color: #EF9F44;
+  background-color: #ef9f44;
 }
 
 .header {
-  height: 100vh;
+  height: 90vh;
   background-color: #273739;
 }
 
@@ -34,6 +35,7 @@ body {
 
 .header__left {
   width: 30%;
+  height: 110%;
   position: relative;
 }
 
@@ -52,6 +54,7 @@ body {
 
 .header__right {
   width: 30%;
+  height: 110%;
   position: relative;
 }
 
@@ -95,7 +98,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .header__attention--right p {
@@ -174,8 +177,21 @@ body {
 .sidebar {
   padding: 2.5rem 7rem;
   display: flex;
+  height: 10vh;
+  background: #273739;
   justify-content: space-between;
   align-items: center;
+}
+
+.sidebar--sticky {
+  content: "";
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 8vh;
+  background: #273739b7;
+  z-index: 20;
 }
 
 .sidebar__icon {
@@ -208,20 +224,20 @@ body {
 }
 
 .sidebar__link:hover {
-  color: #EF9F44;
+  color: #ef9f44;
 }
 
 .btn__classic {
   text-decoration: none;
   color: #fff;
-  background-color: #EF9F44;
+  background-color: #ef9f44;
   padding: 8px 20px;
   font-weight: 600;
   transition: all 0.1s;
 }
 
 .btn__classic:hover {
-  background-color: #4594A1;
+  background-color: #4594a1;
 }
 
 .about-us {
@@ -259,11 +275,11 @@ body {
 }
 
 .about-us__content--item:hover h4 {
-  color: #9E9B98;
+  color: #9e9b98;
 }
 
 .about-us__content--item:hover p {
-  color: #9E9B98;
+  color: #9e9b98;
 }
 
 .about-us:hover .about-us__content {
@@ -400,14 +416,14 @@ body {
 
 .enterprise {
   text-align: center;
-  background-color: #4594A1;
+  background-color: #4594a1;
   padding: 5rem 3rem;
 }
 
 .enterprise h2 {
   color: #fff;
   font-size: 3.5rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .enterprise__container {
@@ -455,7 +471,7 @@ body {
 .communication__right--first {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #E86113;
+  color: #e86113;
   margin-bottom: 5px;
 }
 
