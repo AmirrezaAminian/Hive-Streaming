@@ -2,8 +2,21 @@
 
     padding: 2.5rem 7rem;
     display: flex;
+    height: 10vh;
+    background: #273739;
     justify-content: space-between;
     align-items: center;
+
+    &--sticky {
+        content: "";
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: 8vh;
+        background: #273739b7;
+        z-index: 20;
+    }
 
     &__icon {
         width: 18rem;
@@ -15,7 +28,7 @@
         display: flex;
         align-items: center;
         margin-top: -10px;
-       
+
     }
 
     &__list {
@@ -26,7 +39,7 @@
     }
 
     &__item {
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-right: 2rem;
         }
     }
@@ -37,8 +50,8 @@
         transition: all 0.3s;
         font-weight: 500;
 
-        &:hover{
-             color: $color-primary;
+        &:hover {
+            color: $color-primary;
         }
     }
 
